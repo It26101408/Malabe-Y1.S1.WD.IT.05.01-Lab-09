@@ -2,13 +2,11 @@ import java.util.Scanner;
 
 public class IT26101408Lab9Q4 {
 
-    // a) Calculate final mark
     public static double calcFinalMark(double assignmentMark, double examMark) {
         return (assignmentMark * 0.30) + (examMark * 0.70);
     }
 
-    // b) Find grade
-    public static String findGrades(double finalMark) {
+   public static String findGrades(double finalMark) {
         if (finalMark >= 75) {
             return "A";
         } else if (finalMark >= 60) {
@@ -20,13 +18,11 @@ public class IT26101408Lab9Q4 {
         }
     }
 
-    // c) Print details
-    public static void printDetails(String name, double finalMark, String grade) {
+   public static void printDetails(String name, double finalMark, String grade) {
         System.out.println(name + " | " + finalMark + " | " + grade);
     }
 
-    // d) Main method
-    public static void main(String[] args) {
+   public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         String[] names = new String[5];
